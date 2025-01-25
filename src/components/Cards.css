@@ -12,19 +12,22 @@
 .card {
   width: 300px;
   height: 400px;
-  border: 2px solid #eeff00; /* Yellow border for contrast */
+  border: 2px solid #eeff00;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-size: contain; /* Show the full image */
-  background-repeat: no-repeat; /* Prevent tiling */
-  background-position: center; /* Center the image */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-decoration: none; /* Remove underline for links */
-  color: rgb(255, 255, 255); /* Ensure text is visible over the background */
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 
 .card:hover {
